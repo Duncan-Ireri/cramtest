@@ -70,4 +70,12 @@ export class Game {
       return true;
     }
   }
+
+  isGuessInvalid(guess: string): boolean {  
+    if (guess.match(/^[A-Za-z]{5}$/)) { 
+     return true;
+    }else {
+      return false
+    }
+  }
 }
